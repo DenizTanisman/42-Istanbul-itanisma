@@ -1,0 +1,45 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+*.out
+*.exe
+test
+a.out
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+debug_test
+debug_test.c
+
+# Test files (main.c'yi sakla ama test executable'larını ignore et)
+# main.c'yi tutmak istiyorsan aşağıdaki satırı yorum yap
+# main.c
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.tmp
