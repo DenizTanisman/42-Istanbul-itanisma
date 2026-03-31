@@ -1,4 +1,5 @@
 # Object files
+main.c
 *.o
 *.obj
 

@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MakeFile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: itanisma <ismaildeniztanisman@gmail.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/03/28 00:00:00 by                   #+#    #+#              #
-#    Updated: 2026/03/28 10:04:19 by itanisma         ###   ########.fr        #
+#    Created: 2026/03/28 00:00:00 by itanisma          #+#    #+#              #
+#    Updated: 2026/03/31 19:29:17 by itanisma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,11 @@ NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_printf.c ft_printf_utils.c
+SRCS = ft_printf.c \
+       ft_printf_utils.c
 
 OBJS = $(SRCS:.c=.o)
 
-# Renkli output için (opsiyonel ama güzel görünür)
 GREEN = \033[0;32m
 RED = \033[0;31m
 RESET = \033[0m

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: itanisma <ismaildeniztanisman@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/28 09:54:14 by itanisma          #+#    #+#             */
-/*   Updated: 2026/03/28 10:05:28 by itanisma         ###   ########.fr       */
+/*   Created: 2026/03/31 19:30:00 by itanisma          #+#    #+#             */
+/*   Updated: 2026/03/31 19:28:21 by itanisma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_putstr_fd(char *s, int fd)
 	int	count;
 
 	if (s == NULL)
-		return (0);
+		s = "(null)";
 	count = 0;
 	while (*s)
 	{
@@ -33,12 +33,40 @@ int	ft_putstr_fd(char *s, int fd)
 	return (count);
 }
 
-size_t	ft_strlen(const char *s)
+int	ft_putnbr(long n)
 {
-	size_t	len;
+	int	count;
 
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
+	count = 0;
+	if (n < 0)
+	{
+		count += ft_putchar_fd('-', 1);
+		n = -n;
+	}
+	if (n >= 10)
+		count += ft_putnbr(n / 10);
+	count += ft_putchar_fd((n % 10) + '0', 1);
+	return (count);
+}
+
+int	ft_puthex(unsigned long n, char *base)
+{
+	int	count;
+
+	count = 0;
+	if (n >= 16)
+		count += ft_puthex(n / 16, base);
+	count += ft_putchar_fd(base[n % 16], 1);
+	return (count);
+}
+
+int	ft_print_pointer(void *ptr)
+{
+	int	count;
+
+	if (ptr == NULL)
+		return (ft_putstr_fd("0x0", 1));
+	count = ft_putstr_fd("0x", 1);
+	count += ft_puthex((unsigned long)ptr, "0123456789abcdef");
+	return (count);
 }
