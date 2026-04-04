@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itanisma <ismaildeniztanisman@gmail.com    +#+  +:+       +#+        */
+/*   By: itanisma <itanisma@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/31 19:30:00 by itanisma          #+#    #+#             */
-/*   Updated: 2026/03/31 19:28:58 by itanisma         ###   ########.fr       */
+/*   Updated: 2026/04/04 13:25:38 by itanisma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

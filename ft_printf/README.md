@@ -1,6 +1,4 @@
-# ft_printf
-
-*This project has been created as part of the 42 curriculum by ideniz.*
+*This project has been created as part of the 42 curriculum by itanisma.*
 
 ## Description
 

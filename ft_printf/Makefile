@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: itanisma <ismaildeniztanisman@gmail.com    +#+  +:+       +#+         #
+#    By: itanisma <itanisma@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/28 00:00:00 by itanisma          #+#    #+#              #
-#    Updated: 2026/03/31 19:29:17 by itanisma         ###   ########.fr        #
+#    Updated: 2026/04/04 13:25:45 by itanisma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

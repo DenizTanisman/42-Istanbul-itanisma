@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itanisma <ismaildeniztanisman@gmail.com    +#+  +:+       +#+        */
+/*   By: itanisma <itanisma@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/31 19:30:00 by itanisma          #+#    #+#             */
-/*   Updated: 2026/03/31 19:28:21 by itanisma         ###   ########.fr       */
+/*   Updated: 2026/04/04 13:25:27 by itanisma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	ft_print_pointer(void *ptr)
 	int	count;
 
 	if (ptr == NULL)
-		return (ft_putstr_fd("0x0", 1));
+		return (ft_putstr_fd("(nil)", 1));
 	count = ft_putstr_fd("0x", 1);
 	count += ft_puthex((unsigned long)ptr, "0123456789abcdef");
 	return (count);
