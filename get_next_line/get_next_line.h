@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itanisma <itanisma@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/04 14:21:52 by itanisma          #+#    #+#             */
-/*   Updated: 2026/04/04 14:22:15 by itanisma         ###   ########.fr       */
+/*   Created: 2026/04/04 14:24:40 by itanisma          #+#    #+#             */
+/*   Updated: 2026/04/04 14:57:43 by itanisma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *get_next_line(int fd)
-{
-	
-}
+#ifndef GET_NEXT_LINE.H
+# define GET_NEXT_LINE.H
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#endif
